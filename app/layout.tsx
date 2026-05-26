@@ -4,6 +4,7 @@ import "./globals.css";
 import ReduxProvider from "@/app/provider/ReduxProvider";
 import ProtectedRoute from "./protectRoute/ProtectRoute";
 import AuthBootstrap from "./common/AuthBootstrap";
+import ConditionalHeader from "./common/ConditionalHeader";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <ReduxProvider>
           <AuthBootstrap />
+          <ConditionalHeader />
           <ProtectedRoute>
             {children}
           </ProtectedRoute>
