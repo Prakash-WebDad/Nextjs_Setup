@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import SectionWrapper from "@/app/common/SectionWrapper";
 
 const PLACEHOLDER_TEXTS = [
-    "3-bed home with a big backyard in Austin..",
-    "Modern condo near downtown Seattle..",
-    "Quiet suburb with good schools in NJ..",
-    "Beachfront property with ocean views..",
-    "Cozy craftsman in Portland under $600k..",
-    "Open-plan loft in Chicago's West Loop..",
+    "Search homes in Austin..",
+    "Condos in Seattle..",
+    "Homes near schools..",
+    "Beachfront villas..",
+    "Homes under $600k..",
+    "Luxury apartments..",
 ];
 
 const NAV_ITEMS = ["Buy", "Rent", "Sell", "Pre-approval", "Just sold", "Home value"];
@@ -70,14 +70,14 @@ const HeroSection: React.FC = () => {
                 style={{ backgroundImage: "url('/home_bg-img.png')" }}
             >
                 <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
-                    <h2 className="text-white font-extrabold text-5xl ">
+                    <h2 className="text-white font-semibold text-2xl md:text-5xl ">
                         Real Estate Platform
                     </h2>
-                    <h1 className="text-white font-bold text-6xl mt-5">
+                    <h1 className="text-white font-bold text-3xl md:text-6xl  mt-2 md:mt-5">
                         Find Your Dream Home
                     </h1>
                     <nav aria-label="Property search categories">
-                        <ul className="flex items-center gap-8 mt-5 list-none p-0 max-sm:gap-5" role="tablist">
+                        <ul className="flex items-center gap-8 mt-2 md:mt-5 list-none p-0 max-sm:gap-5" role="tablist">
                             {NAV_ITEMS?.map((item) => (
                                 <li key={item} role="presentation">
                                     <button
